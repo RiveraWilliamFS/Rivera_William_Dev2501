@@ -1,17 +1,16 @@
-import React from 'react'
+import React from 'react';
 
-//Dummy Component
-const MyAvatar = props => {
-    return (
-        <img src={props.AvatarIcon} alt={props.AvatarAlot} style={styles.MyAvatar} />
-    )
+const MyAvatar = (props) => {
+  return (
+    <img src={props.src} alt="Avatar" style={styles.avatar} />
+  );
 }
-export default MyAvatar 
 
-const styles={
-    myAvatar: {
-        height:'75px',
-        cursor: 'pointer',
-        borderRadius: '50%'
-    }
-}
+const styles = {
+  avatar: {
+    width: '50px',
+    borderRadius: '50%'
+  }
+};
+
+export default MyAvatar;

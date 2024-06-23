@@ -1,34 +1,43 @@
 import React from 'react';
-import { FaEdit, FaTrash } from 'react-icons/fa';
-import Marvel from "../images/mateusz-waclawek-t2b2svMf8ek-unsplash.jpg"
+import imageUrl from '../images/icons8-iron-man-16.png'
 
-const PostCard = (props) => {
+const PostCard = ({ avatar, title, description, image, onDelete, onEdit, style }) => {
   return (
-    <div style={styles.card}>
-      <img src={props.avatar} alt="Avatar" style={styles.avatar} />
-      <h2>{props.title}</h2>
-      <p>{props.description}</p>
-      <div style={styles.actions}>
-        <FaEdit />
-        <FaTrash />
-      </div>
+    <div style={style}>
+      <h3>{title}</h3>
+      <p>{description}</p>
+      <img src={imageUrl} alt="Post" />
+      <button onClick={onEdit}>Edit</button>
+      <button onClick={onDelete}>Delete</button>
     </div>
   );
-}
+};
+
+export default PostCard;
+
 
 const styles = {
   card: {
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center',
+    gap: '10px',
+    padding: '30px',
     border: '1px solid #ccc',
-    borderRadius: '5px',
-    padding: '20px',
+    borderRadius: '10px',
     backgroundColor: '#f9f9f9',
-    width: '500px', 
-    height: '300px', 
+    width: '500px',
+    height: '300px',
     margin: '0 auto',
-    boxSizing: 'border-box', 
+    marginRight: '30%',
+    minHeight: '300px'
+  },
+  input: {
+    padding: '10px',
+    fontSize: '1em',
+  },
+  textarea: {
+    padding: '10px',
+    fontSize: '1em',
   },
   avatar: {
     width: '50px',
@@ -42,5 +51,5 @@ const styles = {
   },
 };
 
-export default PostCard;
+
 

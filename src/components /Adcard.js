@@ -1,16 +1,16 @@
 import React from 'react';
-import Groot from '../images/jerry-kavan-3FA80_d8rHo-unsplash.jpg';
 
 const AdCard = props => {
+    console.log(props)
     return (
         <div style={styles.container}>
             <article style={styles.myArticle}>
-                <img src={Groot} alt="I am Groot" style={styles.image} />
-                <h1>I am Groot</h1>
-                <p>I am Groot, I am Groot.</p>
+                <img src="https://www.pexels.com/photo/the-aurora-bore-is-shown-in-the-sky-over-a-forest-24405949/" alt="I am Groot" style={styles.image} />
+                <h1>{props.title}</h1>
+                <p>{props.subtitle}</p>
                 <div style={styles.buttons}>
-                    <button type="submit" style={styles.cardButton}>I am Groot</button>
-                    <button type="submit" style={styles.cardButton}>I am Groot</button>
+                    <button src={props.button} type="submit" style={styles.cardButton}>I am Groot</button>
+                    <button src={props.button} type="submit" style={styles.cardButton}>I am Groot</button>
                 </div>
             </article>
         </div>

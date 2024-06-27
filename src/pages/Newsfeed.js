@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react';
-import AdCard from './components /Adcard';
-import Button from './components /Button';
-import Form from './components /Form';
-import Header from './components /Header';
-import MyAvatar from './components /MyAvatar';
-import Navigation from './components /Navigation';
-import PostCard from './components /PostCard';
+import AdCard from '../components /Adcard';
+import Button from '../components /Button';
+import Form from '../components /Form';
+import Header from '../components /Header';
+import MyAvatar from '../components /MyAvatar';
+import Navigation from '../components /Navigation';
+import PostCard from '../components /PostCard';
 
 const avatarIcon = '../images/icons8-iron-man-16.png';
 
@@ -48,8 +48,8 @@ const styles = {
   
   const App = () => {
     const [cards, setCards] = useState([
-      { title: 'I am Groot@', subtitle: 'I am Groot!', image: 'https://unsplash.com/photos/black-and-brown-monster-illustration-3FA80_d8rHo' },
-      { title: 'I am Groot', subtitle: 'I am Groot', image: 'https://unsplash.com/photos/black-and-brown-monster-illustration-3FA80_d8rHo' },
+      { id: 1, title: 'I am Groot', subtitle: 'I am Groot', image: 'https://unsplash.com/photos/black-and-brown-monster-illustration-3FA80_d8rHo' },
+      { id: 2, title: 'I am Groot', subtitle: 'I am Groot', image: 'https://unsplash.com/photos/black-and-brown-monster-illustration-3FA80_d8rHo' },
     ]);
   
     const [posts, setPosts] = useState([

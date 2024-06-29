@@ -1,4 +1,18 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
+
+function Newsfeed() {
+  return (
+      <section style={StyleSheet.container}>
+          <h1>Newsfeed</h1>
+      </section>
+);
+};
+
+
+export default Newsfeed;
+
+
+/*import React, {useState, useEffect} from 'react';
 import AdCard from '../components /Adcard';
 import Button from '../components /Button';
 import Form from '../components /Form';
@@ -127,4 +141,4 @@ const styles = {
     );
   };
   
-  export default App;
+  export default App; */

@@ -10,10 +10,8 @@ import PostCard from './components /PostCard';
 import Messages from './pages/Messages';
 import Newsfeed from './pages/Newsfeed';
 import Watch from './pages/Watch';
-import Layout from './components /Layout';
 import Settings from './pages/Settings';
 import Dashboard from './pages/Dashboard';
-
 
 
 const avatarIcon = '../images/icons8-iron-man-16.png'; 

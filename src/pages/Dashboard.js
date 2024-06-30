@@ -73,18 +73,3 @@ export default Dashboard;
 
 
 
-
-
-
-
-/*import React from 'react';
-
-const Dashboard = () => {
-  return (
-    <section style={StyleSheet.container}>
-    <h1>Dashboard</h1>
-</section>
-  );
-};
-
-export default Dashboard;*/

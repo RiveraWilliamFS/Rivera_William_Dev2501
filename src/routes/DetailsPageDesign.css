@@ -1,0 +1,76 @@
+.details-container {
+    background-image: url('../images/backgroundgrass.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: black;
+    padding: 10px 0;
+}
+
+.nav-button {
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.details-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.details-card {
+    background-color: white;
+    border-radius: 10px;
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.details-card:hover {
+    transform: scale(1.05);
+}
+
+.details-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #f0f0f0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.details-title {
+    font-size: 18px;
+    color: black;
+    text-align: center;
+}

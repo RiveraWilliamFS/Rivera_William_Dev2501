@@ -61,7 +61,6 @@ const SettingsPage = () => {
                 </div>
             </main>
 
-            {/* Contact Modal */}
             {showContactModal && (
                 <div className="modal-overlay" onClick={() => setShowContactModal(false)}>
                     <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -73,7 +72,6 @@ const SettingsPage = () => {
                 </div>
             )}
 
-            {/* Terms and Conditions Modal */}
             {showTermsModal && (
                 <div className="modal-overlay" onClick={() => setShowTermsModal(false)}>
                     <div className="modal-content terms-modal" onClick={(e) => e.stopPropagation()}>

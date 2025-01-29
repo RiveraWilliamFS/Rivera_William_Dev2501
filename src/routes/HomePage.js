@@ -56,13 +56,11 @@ const HomePage = () => {
                 </button>
             </header>
             <main className="main-content">
-                {/* Fun Facts Section */}
                 <div className="fun-facts">
                     <h2>Did You Know?</h2>
                     <p>{dogFact}</p>
                 </div>
 
-                {/* Circle Image Section */}
                 <div className="circle-image">
                     <img src={thrasherImage} alt="Dog next to lake" className="circle" />
                     <h1 className="main-heading">Let's look up some dogs, shall we?</h1>

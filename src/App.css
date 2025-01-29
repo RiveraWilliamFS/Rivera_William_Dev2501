@@ -28,6 +28,19 @@
   color: #61dafb;
 }
 
+body.dark-mode {
+  background-color: #121212; 
+  color: #ffffff; 
+}
+
+body.dark-mode .App-header {
+  background-color: #1e1e1e; 
+}
+
+body.dark-mode .App-link {
+  color: #bb86fc; 
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

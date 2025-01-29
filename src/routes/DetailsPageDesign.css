@@ -6,6 +6,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-y: auto; 
+    padding-bottom: 20px; 
 }
 
 .navbar {
@@ -34,43 +36,109 @@
 
 .details-content {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column; 
     align-items: center;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 0 20px;
 }
 
-.details-card {
+.details-card, .history-card {
     background-color: white;
     border-radius: 10px;
-    width: 200px;
-    height: 250px;
+    width: 250px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    text-align: center; 
 }
 
-.details-card:hover {
+.details-card:hover, .history-card:hover {
     transform: scale(1.05);
 }
 
-.details-circle {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background-color: #f0f0f0; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.dog-image, .history-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
     margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.details-title {
+.details-title, .history-card h3 {
     font-size: 18px;
+    margin: 10px 0;
+    color: black;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.search-history {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.search-history h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
     color: black;
     text-align: center;
 }
+
+.history-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.history-card p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: black;
+}
+body.dark-mode .details-container {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .details-card, body.dark-mode .history-card {
+    background-color: #333333;
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .details-title, body.dark-mode .history-card h3 {
+    color: #ffffff;
+}
+
+body.dark-mode .history-card p {
+    color: #aaaaaa;
+}
+
+body.dark-mode .navbar {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #ffffff;
+}
+
+body.dark-mode .nav-button {
+    background-color: #333333;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+body.dark-mode .nav-button:hover {
+    background-color: #ffffff;
+    color: #121212;
+}
+

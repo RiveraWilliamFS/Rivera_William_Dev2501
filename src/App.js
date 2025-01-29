@@ -4,6 +4,8 @@ import HomePage from './routes/HomePage';
 import SearchPage from './routes/SearchPage';
 import DetailsPage from './routes/DetailsPage';
 import SettingsPage from './routes/SettingsPage';
+import DogGallery from './DogGallery';
+
 
 function App() {
     return (
@@ -13,6 +15,7 @@ function App() {
                 <Route path="/search" element={<SearchPage />} />
                 <Route path="/details" element={<DetailsPage />} />
                 <Route path="/settings" element={<SettingsPage />} />
+                <Route path="/gallery" element={<DogGallery />} />
             </Routes>
         </Router>
     );

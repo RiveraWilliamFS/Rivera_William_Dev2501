@@ -46,6 +46,9 @@
 
 .search-box {
     margin-top: 20px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
 }
 
 .search-input {
@@ -56,4 +59,64 @@
     font-size: 18px;
     text-align: center;
     box-shadow: 2px 2px 5px black;
+    margin-right: 10px; 
+}
+
+.search-button {
+    padding: 10px 20px; 
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 5px black;
+}
+
+.search-button:hover {
+    background-color: white;
+    color: black;
+}
+/* Dark mode styles */
+body.dark-mode .search-container {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .search-heading {
+    text-shadow: none;
+    color: #ffffff;
+}
+
+body.dark-mode .search-input {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #555555;
+    box-shadow: none;
+}
+
+body.dark-mode .search-button {
+    background-color: #555555;
+    color: #ffffff;
+}
+
+body.dark-mode .search-button:hover {
+    background-color: #ffffff;
+    color: #121212;
+}
+body.dark-mode .navbar {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #ffffff;
+}
+
+body.dark-mode .nav-button {
+    background-color: #333333;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+body.dark-mode .nav-button:hover {
+    background-color: #ffffff;
+    color: #121212;
 }

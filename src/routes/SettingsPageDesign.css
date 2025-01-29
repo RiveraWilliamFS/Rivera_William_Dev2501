@@ -66,3 +66,140 @@
 .settings-button:hover {
     background-color: #d4d4d4;
 }
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.close-button:hover {
+    background-color: red;
+    color: white;
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    max-height: 80%; 
+}
+
+.terms-modal {
+    width: 500px; 
+    text-align: left;
+}
+
+.close-button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.close-button:hover {
+    background-color: red;
+    color: white;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .navbar {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #ffffff;
+}
+
+body.dark-mode .nav-button {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+body.dark-mode .nav-button:hover {
+    background-color: #ffffff;
+    color: #1e1e1e;
+}
+
+body.dark-mode .settings-box {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .settings-button {
+    background-color: #333333;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+body.dark-mode .settings-button:hover {
+    background-color: #ffffff;
+    color: #1e1e1e;
+}
+body.dark-mode .navbar {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #ffffff;
+}
+
+body.dark-mode .nav-button {
+    background-color: #333333;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+body.dark-mode .nav-button:hover {
+    background-color: #ffffff;
+    color: #121212;
+}
+

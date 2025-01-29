@@ -82,35 +82,55 @@ If you are having trouble, contact your instructor ASAP, you might need to be pa
 ### Milestone 3
 ⚙️ Overview - Write overview here.
 <br>
+This milestone marks the completion of a working React app. The app has multiple pages, connects to real APIs, saves data using local storage, and uses extra tools to add features. I believe it meets all the requirements and makes for a smooth experience for the  users.
+<br>
 🌵 Challenges - Write challenges here.
+<br>
+I encountered multiple issues on finalizing this project. I had an issue where it was passing through the API and wouldn't provide any data on the details. I also encountered an issue where if you hit refresh it would keep making duplicates of the dog image on the settings page. Getting the API on the home page was giving me issues as well, it was passing the data but not displaying. 
 <br>
 🏆 Accomplishments - Write Accomplishments here.
 <br>
+Succesfully implemented React routing across all pages. I have two fully funtional API's integrated into the project. The local storage I chose is functioning perfectly.
+<br>
 🔮 Next Steps - Write your next steps here.
-
+<br>
+My next steps will just be further testing and any other debugging. As well as make the video and everything for week 4 that needs be done. 
 <br>
 
 Please discuss the following:
 #### API    
 - Link to the API that is used in your code    
+https://dog-api.kinduff.com/api/facts
 - Reason you chose the API    
+I chose it becuase it provides fun dog facts the coinside with my project seamlessly
 - Where in your code did you use it?    
+I used it on the home page, on the left side. It just radomly will put dog facts in a card I have setup.
 
 #### 1st Library
 - Link to the library    
-- Link to library tutorial that you made already.    
+https://reactrouter.com/
+- Link to library tutorial that you made already.   
+I did not make one. 
 - Reason you chose this library.    
+I chose it because it allows for easy navigation from page to page throughout the entire project.
 - Where in your code is it used?    
+Its used across all 4 pages. Home, Search, Details and Settings. 
 
 #### 2nd Library    
 - Link to the library    
-- Reason you chose this library.    
+https://github.com/donavon/use-dark-mode
+- Reason you chose this library.   
+I thought about the darkmode idea early on in my project. Honestly I didnt know Id be using it as a library until it come to the point of using it.  
 - Where in your code is it used?    
+Its implemented on the settings page, but once enabled its used across all pages. 
 
 #### Persistent Data    
-- Discuss if you have used MongoDB or Local Storage.    
+- Discuss if you have used MongoDB or Local Storage. 
+I used Local storage   
 - How was it used in your code?    
+Its used in two ways. One way is too keep every dog you search on the details page. Also once youi enable dark mode I used local storage to maintin the theme across all pages.
 - Where in your code is it used?    
+Its used on the details and on all pages once darkmode is enabled.
 
 
 

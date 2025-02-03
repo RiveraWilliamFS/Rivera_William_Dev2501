@@ -1,0 +1,129 @@
+body, html, .home-container {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+  height: 100%; 
+  background-image: url('../images/backgroundgrass.jpg');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  height: calc(100vh - 70px); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-button {
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.nav-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.fun-facts {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.fun-facts h2 {
+  font-size: 22px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.fun-facts p {
+  font-size: 18px;
+  color: #333;
+}
+
+.circle-image {
+  text-align: center;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.main-heading {
+  color: white;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.start-button {
+  background-color: white;
+  color: black;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 20px;
+  border: 2px solid black;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: black;
+  color: white;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+  background-image: none; 
+}
+body.dark-mode .navbar {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .nav-button {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+body.dark-mode .fun-facts {
+  background-color: rgba(50, 50, 50, 0.8);
+  color: #ffffff;
+}
+
+body.dark-mode .circle {
+  border-color: #ffffff;
+}
+
+body.dark-mode .start-button {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+body.dark-mode .start-button:hover {
+  background-color: #ffffff;
+  color: #1e1e1e;
+}

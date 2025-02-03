@@ -1,0 +1,38 @@
+.search-container {
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    background-image: url('../images/backgroundgrass.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    height: 60px;
+    padding: 0 1rem;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 1020;
+}
+
+.search-content {
+    margin-top: 80px; 
+    flex-grow: 1; 
+}
+
+.btn-outline-light {
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 20px;
+}
+
+.form-control {
+    height: 45px;
+    font-size: 16px;
+}
+
+.btn-dark {
+    height: 45px;
+    font-size: 16px;
+}

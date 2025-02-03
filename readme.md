@@ -140,21 +140,27 @@ Its used on the details and on all pages once darkmode is enabled.
 ### Milestone 4
 ⚙️ Overview - Write overview here.
 <br>
+In Milestone 4, I worked on making the app look better by using Bootstrap for styling. I also focused on fixing issues with dark mode and making sure the design worked well on different screen sizes. The goal was to make the app look consistent and easy to use.
+<br>
 🌵 Challenges - Write challenges here.
+<br>
+I had a hard time with dark mode because it changed the whole page instead of just the buttons and input fields. Adding Bootstrap was confusing since it messed up my styles sometimes. The navigation bar and other things on the page didn’t stay in the right spot, which made the layout look wrong. It was also tricky to make all the pages look the same but still a little different. 
 <br>
 🏆 Accomplishments - Write Accomplishments here.
 <br>
+I used Bootstrap to make the app look nicer and easier to use. I made sure the navigation bar stays at the top, and the content shows up below it. I also fixed the layout so it works well on big and small screens. 
+<br>
 🔮 Next Steps - Write your next steps here.
-
+There are no next steps it is all done. And the class is now over. 
 <br>
 
 Please discuss the following:  
 #### Changes
 - Discuss any changes or updates that you have made to your site since Milestone #3.
-
+I changed the whole way it is styled using bootstrap. Thats the only changes made. 
 #### Styling
 - Discuss the process you used to style your page.
-
+Honeslty I only used bootstrap because tailwind was not working. 
 #### Link To Overview Video
 - Once it is created, put the link to your overview video of your site here.
 

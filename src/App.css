@@ -1,51 +1,197 @@
-.App {
+body {
+  background-image: url('../images/backgroundgrass.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: black;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-button {
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 8px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: white;
+  color: black;
+}
+
+body.dark-mode .nav-button {
+  background-color: #333333;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+body.dark-mode .nav-button:hover {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+.container {
+  padding-top: 80px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2, h5 {
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h5 {
+  text-shadow: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.button {
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #d4d4d4;
+}
+
+body.dark-mode .button {
+  background-color: #333333;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+body.dark-mode .button:hover {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  width: 300px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+.search-container input {
+  width: 300px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  font-size: 18px;
+  text-align: center;
+  box-shadow: 2px 2px 5px black;
+  margin-right: 10px;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  font-size: 18px;
+  background-color: black;
   color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 5px black;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
 body.dark-mode {
   background-color: #121212; 
   color: #ffffff; 
 }
 
-body.dark-mode .App-header {
-  background-color: #1e1e1e; 
+body.dark-mode .navbar {
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #ffffff;
 }
 
-body.dark-mode .App-link {
-  color: #bb86fc; 
+body.dark-mode .navbar button {
+  background-color: #333333;
+  color: #ffffff;
+  border-color: #ffffff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body.dark-mode .navbar button:hover {
+  background-color: #ffffff;
+  color: #1e1e1e;
 }
+
+body.dark-mode .settings-box {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .settings-box button {
+  background-color: #333333;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+body.dark-mode .settings-box button:hover {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+body.dark-mode input.form-control {
+  background-color: #333333;
+  color: #ffffff;
+  border: 1px solid #555555;
+}
+
+body.dark-mode .btn-dark {
+  background-color: #555555;
+  color: #ffffff;
+}
+
+body.dark-mode .btn-dark:hover {
+  background-color: #ffffff;
+  color: #121212;
+}
+

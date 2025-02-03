@@ -1,24 +1,22 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import useDarkMode from '../hooks/useDarkMode';
-import './SearchPageDesign.css';
 
 const SearchPage = () => {
-    useDarkMode(); 
+    useDarkMode();
 
-    const [breed, setBreed] = useState(''); 
+    const [breed, setBreed] = useState('');
     const navigate = useNavigate();
 
     const handleSearch = async (e) => {
-        e.preventDefault(); 
+        e.preventDefault();
 
         try {
             const response = await fetch(`http://localhost:5001/api/dogs/search?breed=${breed}`);
             const data = await response.json();
 
             if (response.ok) {
-                console.log(data); 
-                navigate('/details', { state: data }); 
+                navigate('/details', { state: data });
             } else {
                 alert(data.message || 'Breed not found');
             }
@@ -30,26 +28,27 @@ const SearchPage = () => {
 
     return (
         <div className="search-container">
-            <header className="navbar">
-                <button className="nav-button" onClick={() => navigate('/')}>Home</button>
-                <button className="nav-button" onClick={() => navigate('/search')}>Search</button>
-                <button className="nav-button" onClick={() => navigate('/details')}>Details</button>
-                <button className="nav-button" onClick={() => navigate('/settings')}>Settings</button>
-            </header>
-            <main className="search-content">
-                <h1 className="search-heading">Search a Breed of Dog</h1>
-                <div className="search-box">
-                    <form onSubmit={handleSearch}>
-                        <input
-                            type="text"
-                            className="search-input"
-                            placeholder="Search"
-                            value={breed}
-                            onChange={(e) => setBreed(e.target.value)} 
-                        />
-                        <button type="submit" className="search-button">Search</button>
-                    </form>
+            <nav className="navbar navbar-dark bg-dark">
+                <div className="container-fluid d-flex justify-content-around">
+                    <button className="btn btn-outline-light" onClick={() => navigate('/')}>Home</button>
+                    <button className="btn btn-outline-light" onClick={() => navigate('/search')}>Search</button>
+                    <button className="btn btn-outline-light" onClick={() => navigate('/details')}>Details</button>
+                    <button className="btn btn-outline-light" onClick={() => navigate('/settings')}>Settings</button>
                 </div>
+            </nav>
+
+            <main className="search-content container d-flex flex-column align-items-center justify-content-center text-center mt-5">
+                <h1 className="text-dark mb-4">Search a Breed of Dog</h1>
+                <form onSubmit={handleSearch} className="d-flex w-50 justify-content-center">
+                    <input
+                        type="text"
+                        className="form-control rounded-pill me-3"
+                        placeholder="Search"
+                        value={breed}
+                        onChange={(e) => setBreed(e.target.value)}
+                    />
+                    <button type="submit" className="btn btn-dark rounded-pill px-4">Search</button>
+                </form>
             </main>
         </div>
     );

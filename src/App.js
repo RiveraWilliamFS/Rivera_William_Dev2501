@@ -5,6 +5,8 @@ import SearchPage from './routes/SearchPage';
 import DetailsPage from './routes/DetailsPage';
 import SettingsPage from './routes/SettingsPage';
 import DogGallery from './DogGallery';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 function App() {

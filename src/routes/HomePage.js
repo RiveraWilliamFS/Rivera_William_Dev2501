@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './HomePageDesign.css';
 import useDarkMode from '../hooks/useDarkMode';
 import thrasherImage from '../images/thrasher.jpeg';
 
 const HomePage = () => {
-    useDarkMode(); 
+    useDarkMode();
     const navigate = useNavigate();
 
     const [dogFact, setDogFact] = useState('Loading dog fact...');
@@ -32,7 +33,7 @@ const HomePage = () => {
             fetchDogFact();
         }, 7000);
 
-        return () => clearInterval(interval); 
+        return () => clearInterval(interval);
     }, []);
 
     const handleStartClick = () => {
@@ -41,32 +42,39 @@ const HomePage = () => {
 
     return (
         <div className="home-container">
-            <header className="navbar">
-                <button className="nav-button" onClick={() => navigate('/')}>
+            <nav className="navbar navbar-dark bg-dark d-flex justify-content-around py-2">
+                <button className="btn btn-outline-light" onClick={() => navigate('/')}>
                     Home
                 </button>
-                <button className="nav-button" onClick={() => navigate('/search')}>
+                <button className="btn btn-outline-light" onClick={() => navigate('/search')}>
                     Search
                 </button>
-                <button className="nav-button" onClick={() => navigate('/details')}>
+                <button className="btn btn-outline-light" onClick={() => navigate('/details')}>
                     Details
                 </button>
-                <button className="nav-button" onClick={() => navigate('/settings')}>
+                <button className="btn btn-outline-light" onClick={() => navigate('/settings')}>
                     Settings
                 </button>
-            </header>
-            <main className="main-content">
-                <div className="fun-facts">
-                    <h2>Did You Know?</h2>
-                    <p>{dogFact}</p>
-                </div>
+            </nav>
 
-                <div className="circle-image">
-                    <img src={thrasherImage} alt="Dog next to lake" className="circle" />
-                    <h1 className="main-heading">Let's look up some dogs, shall we?</h1>
-                    <button className="start-button" onClick={handleStartClick}>
-                        Start
-                    </button>
+            <main className="container mt-5">
+                <div className="row align-items-center">
+                    <div className="col-md-6 mb-4">
+                        <div className="fun-facts card shadow-sm p-3">
+                            <h2 className="card-title">Did You Know?</h2>
+                            <p className="card-text">{dogFact}</p>
+                        </div>
+                    </div>
+
+                    <div className="col-md-6 text-center">
+                        <div className="circle-image mb-4">
+                            <img src={thrasherImage} alt="Dog next to lake" className="circle" />
+                        </div>
+                        <h1 className="main-heading">Let's look up some dogs, shall we?</h1>
+                        <button className="start-button mt-3" onClick={handleStartClick}>
+                            Start
+                        </button>
+                    </div>
                 </div>
             </main>
         </div>
